@@ -8,7 +8,7 @@ export const serverError = (error: Error): HttpResponse => ({
   body: error.message
 })
 
-export const ok = <T = any>(body: T): HttpResponse<T> => ({
+export const ok = (body: any): HttpResponse => ({
   statusCode: 200,
   body
 })
