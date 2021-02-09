@@ -11,12 +11,10 @@ type Hero = {
 }
 
 export class RankingScoreViewModel {
-  constructor(
-    private player: Player,
-    private score: number,
-    private matchDate: string,
-    private heroes: Hero[],
-  ) { }
+  player: Player
+  score: number
+  matchDate: string
+  heroes: Hero[]
 
   public static map(entity: RankingScore): RankingScoreViewModel {
     return {
