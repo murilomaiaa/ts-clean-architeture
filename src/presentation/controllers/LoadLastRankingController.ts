@@ -13,7 +13,7 @@ export class LoadLastRankingController implements Controller {
       const viewModels = RankingScoreViewModel.mapCollection(ranking)
       return ok(viewModels)
     } catch (error) {
-      return serverError(error.message)
+      return serverError(error)
     }
   }
 }
