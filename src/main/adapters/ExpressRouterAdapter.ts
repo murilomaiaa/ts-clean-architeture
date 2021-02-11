@@ -1,5 +1,3 @@
-import { makeLoadLastRankingController } from "../factories"
-
 import { Request, Response } from "express"
 import { Controller } from "@/presentation/contracts"
 
