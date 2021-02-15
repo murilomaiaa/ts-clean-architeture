@@ -3,14 +3,18 @@
     "outDir": "dist",
     "module": "commonjs",
     "target": "es2019",
-    "esModuleInterop": true,
     "rootDir": "src",
     "baseUrl": "src",
     "paths": {
       "@/*": [
         "*"
       ]
-    }
+    },
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
   "include": [
     "src"

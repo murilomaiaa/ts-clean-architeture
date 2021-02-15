@@ -1,9 +1,12 @@
 import { LastRankingLoader } from "@/domain/usecases";
 import { Controller, HttpResponse, ok, serverError } from "@/presentation/contracts";
+import { inject, injectable } from "tsyringe";
 import { RankingScoreViewModel } from "../viewModels";
 
+@injectable()
 export class LoadLastRankingController implements Controller {
   constructor(
+    @inject('LastRankingLoader')
     private readonly lastRankingLoader: LastRankingLoader
   ) { }
 

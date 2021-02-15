@@ -1,5 +1,8 @@
+import "reflect-metadata"
+
 import { setupRoutes } from '@/main/config/routes'
 import { setupApolloServer } from './apolloServer'
+import '../container'
 
 import express from 'express'
 
